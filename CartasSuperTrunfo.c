@@ -37,7 +37,7 @@ int main(){
     printf("Digite o Código da Carta A: ");
     scanf("%s", codigo1);
 
-    printf("Digite A Cidade da Carta A: ");
+    printf("Digite a Cidade da Carta A: ");
     scanf("%s", cidade1);
 
     printf("Digite a População da Carta A: ");
@@ -60,7 +60,7 @@ int main(){
     printf("Digite o Código da Carta B: ");
     scanf("%s", codigo2);
 
-    printf("Digite A Cidade da Carta B: ");
+    printf("Digite a Cidade da Carta B: ");
     scanf("%s", cidade2);
 
     printf("Digite a População da Carta B: ");
@@ -126,6 +126,13 @@ int main(){
     printf("PIB per Capita: Carta A é maior que Carta B? %d\n", pibpercapita1 > pibpercapita2);
     printf("Super Poder: Carta A é maior que Carta B? %d\n", superpoder1 > superpoder2);
 
+// ---------- Processamento dos dados ----------
+
+    if (pibpercapita1 > pibpercapita2) {
+        printf("A Carta %s Venceu!!!\n", codigo1);
+    } else {
+        printf("A Carta %s Venceu!!\n", codigo2);
+    }
 
 return 0;
 }
